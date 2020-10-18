@@ -1,0 +1,53 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <!-- <div id="main-content" class="container">
+  
+    <div class="cart-item" *ngFor="let item of appComponent.stockFeeds">
+        <span>{{ item.symbol }} </span>
+        <span>{{ item.price }}</span>
+      </div>
+
+  </div> -->
+
+  <style>
+
+#box{
+        height: 20%;
+        left: 40%;
+        margin-left: -100px;
+        position: absolute;
+        top: 35%;
+        width: 500px;
+    }
+
+    table, th, td {
+      border: 1px solid red;
+    }
+    h1 {
+        color: Red;
+    }
+    </style>
+
+ <div><h1 align=center>Realtime Stock Feed</h1></div>
+
+  <!-- <div id=box>
+    <table width="100%" color=red border=1 cellspacing="3">            
+    <tr><td align=center>Symbol</td><td align=center> Price</td><td align=center>Trend</td></tr>
+    <tr *ngFor = "let x of appComponent.stockFeeds">            
+    <td align=center>{{x.symbol}}</td>
+    <td align=center>{{x.price}}</td>
+    <td align=center>{{x.trend}}</td>
+    </tr>
+    </table>
+</div>  -->
+
+<div >
+    <table align=center border=1 width=60%>            
+    <tr><td align=center>Symbol</td><td align=center> Price</td><td align=center>Trend</td></tr>
+    <tr *ngFor = "let x of appComponent.stockFeeds">            
+    <td align=center>{{x.symbol}}</td>
+    <td align=center>{{x.price}}</td>
+    <td align=center>{{x.trend}}</td>
+    </tr>
+    </table>
+</div> 
